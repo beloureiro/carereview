@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/carereview/static/js/main.76854e82.js",
+    "static/media/Logo_full.png": "/carereview/static/media/Logo_full.cd9fddd93d73aaa764b7.png",
+    "index.html": "/carereview/index.html",
+    "main.76854e82.js.map": "/carereview/static/js/main.76854e82.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.76854e82.js"
+  ]
+}
