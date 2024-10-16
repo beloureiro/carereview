@@ -1,6 +1,6 @@
 # Patient Feedback Review App
 
-This application is designed to test a new review model for clients, specifically aimed at gathering patient feedback on healthcare professionals. The app provides a seamless way for users to rate various aspects of their experience with healthcare providers, including overall experience, communication quality, and more.
+This application is designed to offer a structured and categorized review system for patients to share feedback on healthcare professionals. It helps patients make informed decisions by providing detailed ratings across various aspects of care and allows them to select a "Style of Care" that best aligns with their preferences. This promotes transparency and alignment between patient expectations and healthcare provider approaches.
 
 You can access the published version of the app here: [Care Review App](https://beloureiro.github.io/carereview/)
 
@@ -12,16 +12,16 @@ You can access the published version of the app here: [Care Review App](https://
 5. [Components](#components)
 
 ## Features
-- **Survey Modal**: A pop-up modal that allows users to rate their experience with a healthcare professional.
-- **Styled Components**: The app uses `styled-components` for component-level styling, making it easy to customize and maintain.
-- **Filtering and Searching**: A professional list component that includes filters and search functionality to narrow down healthcare providers by name or specialty.
-- **Context API**: Manages global state for professionals, allowing easy access to data across components.
+- **Comprehensive Patient Feedback**: Users can rate their experience with healthcare providers on aspects like communication, waiting time, value perception, and more, offering a well-rounded view of each professional's service.
+- **"Style of Care" Selection**: Patients can select the approach that best describes the provider’s style—Compassionate, Professional, or Analytical—helping future patients find a doctor whose interaction style suits their needs.
+- **Search and Filter Functionality**: The app includes options to search for professionals by name or filter by specialty, making it easy to find the right provider.
+- **Interactive Survey Modal**: A dynamic feedback form where patients can provide ratings and select care styles in a user-friendly interface.
 
 ## Technologies Used
-- **React**: A JavaScript library for building user interfaces.
-- **Styled Components**: A library for styling React components.
-- **Framer Motion**: For animations within the survey modal and feedback messages.
-- **React Context API**: Manages the state across the app, specifically for professionals and their ratings.
+- **React**: For building the user interface and managing component-based architecture.
+- **Styled Components**: Used for styling the app at the component level, ensuring a consistent and customizable design.
+- **Framer Motion**: Implements animations in the survey modal and feedback interactions for an enhanced user experience.
+- **React Context API**: Handles global state management for professional data and ratings across components.
 
 ## Installation
 To run this project locally, you need Node.js installed on your computer.
@@ -46,26 +46,26 @@ To run this project locally, you need Node.js installed on your computer.
 The app should now be running on `http://localhost:3000`.
 
 ## Usage
-1. **Survey Modal**: Click the "Open Feedback Survey" button to start a survey about a specific professional. Complete the form by providing ratings and selecting the "Style of Care."
-2. **Filter and Search**: Use the search input and filter buttons to find specific professionals by name or specialty.
-3. **Professional Profile**: Click on a professional's card to view detailed information, including their ratings and style of care.
+1. **Provide Feedback**: Select "Open Feedback Survey" on a professional's profile to submit a detailed review, including ratings and style of care.
+2. **Search and Filter**: Use the search bar and filters to narrow down professionals by name or specialty.
+3. **View Professional Details**: Click on a professional's card to access detailed information about their ratings, available appointment times, and approach to care.
 
 ## Components
 
 ### 1. `FeedbackSurvey`
-A modal component where users provide detailed feedback on various aspects of their experience. The survey includes:
-- **Overall Experience** rating with star selection.
-- **Rating Sliders** for individual criteria like waiting time, communication clarity, and environment.
-- **Style of Care** buttons to select the professional's approach.
+An interactive modal for patients to provide feedback on specific aspects like waiting time, communication quality, value perception, and more. It includes:
+- **Overall Experience**: Star rating to summarize general satisfaction.
+- **Detailed Criteria**: Sliders for specific ratings (e.g., waiting time, clarity, environment).
+- **Style of Care**: Options to select the provider’s care approach.
 
 ### 2. `ProfessionalCard`
-Displays a card with basic information about a professional, including name, specialty, and overall rating. When clicked, it displays the detailed profile of the selected professional.
+Displays basic information about each healthcare professional, such as their name, specialty, location, and overall rating. Clicking on the card opens a detailed profile.
 
 ### 3. `ProfessionalProfile`
-Shows detailed information about a selected professional, including their ratings, style of care, and specific feedback criteria.
+Shows a comprehensive view of the selected professional, including their ratings, style of care, and individual feedback on various care aspects.
 
 ### 4. `ProfessionalsList`
-Displays a searchable and filterable list of professionals. The user can search by name or specialty and filter based on predefined categories.
+A searchable and filterable list of healthcare providers, allowing users to easily find professionals by specialty or name.
 
 ## License
 This project is open source and available under the [MIT License](LICENSE).
