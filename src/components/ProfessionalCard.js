@@ -12,8 +12,7 @@ const Card = styled.div`
   align-items: flex-start;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   border: 1px solid var(--border-color);
-  max-width: 300px; // Definindo uma largura máxima
-  width: 100%; // Garantindo que ocupe toda a largura disponível até o máximo
+  width: 100%;
 `;
 
 const ProfileImage = styled.img`

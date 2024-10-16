@@ -38,12 +38,16 @@ const ModalOverlay = styled(motion.div)`
 const ModalContent = styled(motion.div)`
   background-color: white;
   border-radius: 20px;
-  padding: 40px;
+  padding: 20px;
   width: 95%;
-  max-width: 900px; // Aumentado para maior largura
+  max-width: 900px;
   max-height: 90vh;
   overflow-y: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
 `;
 
 const SurveyTitle = styled.h2`
@@ -219,8 +223,12 @@ const SliderLabel = styled.span`
 
 const SurveyGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const CurrentRating = styled.span`

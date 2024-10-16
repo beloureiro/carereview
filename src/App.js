@@ -14,7 +14,7 @@ const AppContainer = styled.div`
 const Header = styled.header`
   background-color: #00c3a5;
   color: var(--white);
-  padding: 5px 0; // Reduzido para diminuir a altura da barra
+  padding: 5px 0;
   margin-bottom: 20px;
 `;
 
@@ -22,6 +22,7 @@ const HeaderContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 const Logo = styled.img`
@@ -29,28 +30,39 @@ const Logo = styled.img`
   background-color: white;
   padding: 5px;
   border-radius: 5px;
+  margin-bottom: 10px;
 `;
 
 const AppTitle = styled.h1`
   color: white;
-  font-size: 3rem; // Aumentado o tamanho da fonte
-  font-weight: 700; // Tornando a fonte mais negrita
+  font-size: 2rem;
+  font-weight: 700;
   margin: 0;
   flex-grow: 1;
   text-align: center;
-  font-family: 'Montserrat', sans-serif; // Uma fonte mais moderna (você precisará importá-la)
-  text-transform: uppercase; // Transformando o texto em maiúsculas
-  letter-spacing: 4px; // Adicionando espaçamento entre as letras
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1); // Adicionando uma sombra sutil
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
 `;
 
 const MainContent = styled.div`
   display: flex;
   gap: 20px;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 const ListColumn = styled.div`
-  flex: 0 0 300px;
+  flex: 1;
 `;
 
 const ProfileColumn = styled.div`

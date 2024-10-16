@@ -4,11 +4,15 @@ import { useProfessionalsContext } from '../context/ProfessionalsContext';
 import ProfessionalCard from './ProfessionalCard';
 
 const ListContainer = styled.div`
-  max-width: 480px; // Reduced from 560px
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 8px; // Reduced from 10px
+  gap: 8px;
+
+  @media (min-width: 768px) {
+    max-width: 480px;
+  }
 `;
 
 const SearchInput = styled.input`

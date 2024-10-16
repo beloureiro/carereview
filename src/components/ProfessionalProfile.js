@@ -10,6 +10,7 @@ const ProfileContainer = styled.div`
   border-radius: 8px;
   padding: 20px;
   height: 100%;
+  width: 100%;
 `;
 
 const ProfileHeader = styled.div`
